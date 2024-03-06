@@ -17,5 +17,23 @@ export const productData = [
         imageUrl: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
         price: 34.99
       },
+      {
+        name: 'Product 4',
+        description: 'This is the description for Product 4',
+        imageUrl: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+        price: 55.99
+      },
+      {
+        name: 'Product 5',
+        description: 'This is the description for Product 5',
+        imageUrl: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+        price: 66.99
+      },
+      {
+        name: 'Product 6',
+        description: 'This is the description for Product 6',
+        imageUrl: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+        price: 77.99
+      },
 
   ];

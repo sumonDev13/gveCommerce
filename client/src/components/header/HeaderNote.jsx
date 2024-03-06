@@ -2,7 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
  
  const ExampleComponent = () => {
   return (
-    <div className='text-center justify-center'>
+    <div className='text-center justify-center py-2'>
     <TypeAnimation
       sequence={[
         'Use of Google Voice after purchase is at your own risk ', // Types 'One'
