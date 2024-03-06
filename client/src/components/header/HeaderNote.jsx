@@ -2,6 +2,7 @@ import { TypeAnimation } from 'react-type-animation';
  
  const ExampleComponent = () => {
   return (
+    <div className='text-center justify-center'>
     <TypeAnimation
       sequence={[
         'Use of Google Voice after purchase is at your own risk ', // Types 'One'
@@ -16,8 +17,9 @@ import { TypeAnimation } from 'react-type-animation';
       wrapper="span"
       cursor={true}
       repeat={Infinity}
-      style={{ fontSize: '2em', display: 'inline-block' }}
+      style={{ fontSize: '1em', color:"red", display: 'inline-block' }}
     />
+    </div>
   );
 };
 
