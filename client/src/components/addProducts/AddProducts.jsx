@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 
 const AddProducts = () => {
   const [productData, setProductData] = useState({
@@ -9,9 +10,23 @@ const AddProducts = () => {
     quantity: "",
   });
 
-  const handleSubmit = () => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:8000/api/products", productData);
+      console.log(response.data); // Handle the response data as needed
+    } catch (error) {
+      console.error("Error occurred while adding product:", error);
+    }
+  };
 
-  const handleInputChange = () => {};
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setProductData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
   return (
     <div>
