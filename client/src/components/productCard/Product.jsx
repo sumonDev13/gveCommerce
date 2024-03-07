@@ -4,7 +4,7 @@ const Product = ({ product }) => {
   const { name, description, imageUrl, price } = product;
 
   return (
-    <div className="card card-compact max-w-80  shadow-xl my-4 sm:mx-4 bg-[#A7CDCC] ">
+    <div className="card card-compact max-w-80  shadow-xl my-4 sm:mx-4 bg-[#A7CDCC] transition duration-900 ease-in-out hover:transform hover:-translate-y-1 hover:scale-70 ... ">
       <figure>
         <img src={imageUrl} alt={name} />
       </figure>
