@@ -1,16 +1,15 @@
-import Footer from "./components/footer/Footer";
-import ExampleComponent from "./components/header/HeaderNote";
-import Hero from "./components/hero/Hero";
-import Navbar from "./components/navbar/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/home/Home";
+import AddProducts from './pages/addProducts/AddProducts'
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <ExampleComponent/>
-      <Hero/>
-      <Footer/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/addProducts" element={<AddProducts />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
